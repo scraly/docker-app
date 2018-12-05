@@ -7,6 +7,30 @@ Creates a docker image containing:
 - settings and metadata files
 - other supporting files
 
+## Installation
+
+```
+wget https://github.com/docker/app/releases/download/v0.6.0/docker-app-linux.tar.gz
+tar xf docker-app-linux.tar.gz
+cp docker-app-linux /usr/local/bin/docker-app
+```
+
+## Shell completion
+
+### Bash
+
+```
+vi .bashrc
+source <(docker-app completion bash)
+```
+
+### Zsh
+
+```
+vi .zshrc
+source <(docker-app completion zsh
+```
+
 ## Usage
 
 ### Bootstrap a project
@@ -16,6 +40,10 @@ Creates a docker image containing:
 ### create an image and push it
 
 `$ docker-app push test`
+
+or
+
+`$ docker-app push --namespace myhubuser --tag latest`
 
 ### pull the docker imzge and deploy it
 
