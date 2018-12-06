@@ -10,9 +10,9 @@ Creates a docker image containing:
 ## Installation
 
 ```
-wget https://github.com/docker/app/releases/download/v0.6.0/docker-app-linux.tar.gz
-tar xf docker-app-linux.tar.gz
-cp docker-app-linux /usr/local/bin/docker-app
+$ wget https://github.com/docker/app/releases/download/v0.6.0/docker-app-linux.tar.gz
+$ tar xf docker-app-linux.tar.gz
+$ sudo cp docker-app-linux /usr/local/bin/docker-app
 ```
 
 ## Shell completion
@@ -20,15 +20,15 @@ cp docker-app-linux /usr/local/bin/docker-app
 ### Bash
 
 ```
-vi .bashrc
-source <(docker-app completion bash)
+$ vi .bashrc
+$ source <(docker-app completion bash)
 ```
 
 ### Zsh
 
 ```
-vi .zshrc
-source <(docker-app completion zsh
+$ vi .zshrc
+$ source <(docker-app completion zsh
 ```
 
 ## Usage
