@@ -37,18 +37,18 @@ $ source <(docker-app completion zsh
 
 `$ docker-app init test`
 
+### Launch the application locally
+
+`$ docker-app render | docker-compose -f - up`
+
 ### create an image and push it
-
-`$ docker-app push test`
-
-or
 
 `$ docker-app push --namespace myhubuser --tag latest`
 
-### pull the docker imzge and deploy it
-
-`$ docker-app deploy scraly/test:master`
-
 ### Pull the app and output the compose file to stdout
 
-`$ docker-app render scraly/test.dockerapp:master`
+`$ docker-app render scraly/test.dockerapp:latest`
+
+### pull the docker image and deploy it
+
+`$ docker-app deploy scraly/test:latest`
