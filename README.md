@@ -52,3 +52,5 @@ $ source <(docker-app completion zsh
 ### pull the docker image and deploy it
 
 `$ docker-app deploy scraly/test:latest`
+
+After deploy command, docker image is available on [docker hub](https://hub.docker.com/r/scraly/test.dockerapp).
